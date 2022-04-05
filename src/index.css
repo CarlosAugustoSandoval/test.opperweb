@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.carousel-caption {
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.centered {
+    text-align: -webkit-center;
+}
+
+.bg-primary {
+    background: rgba(255, 255, 255, 0.47);
+}
+
+@layer components {
+    .primary-radio {
+        @apply
+        form-check-input
+        form-check-input
+        appearance-none
+        rounded-full
+        h-5
+        w-5
+        border-2
+        border-white
+        bg-primary
+        checked:border-2
+        checked:bg-bg-primary
+        checked:border-white
+        focus:outline-none
+        transition
+        duration-200
+        align-top
+        bg-no-repeat
+        bg-center
+        bg-contain
+        float-left
+        mr-2
+        cursor-pointer
+        !important;
+    }
+    .primary-button {
+        @apply
+        w-full
+        h-[60px]
+        px-6
+        py-2.5
+        bg-second-color
+        text-black
+        font-archivo
+        font-bold
+        text-base
+        rounded-[10px]
+        shadow-md
+        hover:bg-first-color
+        hover:shadow-lg
+        focus:bg-first-color
+        focus:shadow-lg
+        focus:outline-none
+        focus:ring-0
+        active:bg-first-color
+        active:shadow-lg
+        transition
+        duration-150
+        ease-in-out
+        !important;
+    }
+
+    .base-input {
+        @apply
+        bg-primary
+        form-control
+        block
+        w-full
+        h-14
+        px-3
+        py-1.5
+        text-base
+        font-archivo
+        text-[#D8D5D9]
+        bg-clip-padding
+        border-2
+        border-solid
+        border-white
+        rounded-[10px]
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700
+        focus:bg-white
+        focus:border-second-color
+        focus:outline-none
+        !important;
+    }
+}
